@@ -34,10 +34,17 @@ function copyTextColor(e) {
   let box = document.querySelector('.message-field');
   box.style.transform = "translate3d(0, 0, 0)";
 
+  clipboardText.setAttribute('disabled', 'true');
+
+  window.setTimeout(() => {
+    clipboardText.removeAttribute('disabled', 'true');
+  }, 350);
+
   window.setTimeout(() => {
     box.style.transform = "translate3d(0, 200px, 0)";
-  }, 800);
-  
+  }, 550);
+
+
 }
 
 

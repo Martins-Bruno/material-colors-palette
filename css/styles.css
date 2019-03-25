@@ -3,6 +3,10 @@
 * {
   font-family: Roboto, sans-serif;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -81,7 +85,7 @@ body {
   bottom: 5%;
   z-index: 2;
   transform: translate3d(0, 200px, 0);
-  transition: 75ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
 
 .message {
@@ -89,7 +93,7 @@ body {
   max-width: 500px;
   height: 100%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   justify-content: center;
   align-items: center;
