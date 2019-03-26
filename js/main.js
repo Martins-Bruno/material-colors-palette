@@ -32,7 +32,9 @@ function copyTextColor(e) {
   let mensagem = document.querySelector('.message').innerHTML = "Cor " + selectedColor + " copiada";
 
   let box = document.querySelector('.message-field');
-  box.style.transform = "translate3d(0, 0, 0)";
+  box.style.visibility = "visible";
+  box.style.opacity = "1";
+
 
   clipboardText.setAttribute('disabled', 'true');
 
@@ -41,8 +43,9 @@ function copyTextColor(e) {
   }, 350);
 
   window.setTimeout(() => {
-    box.style.transform = "translate3d(0, 200px, 0)";
-  }, 550);
+    box.style.visibility = "hidden";
+    box.style.opacity = "0";
+  }, 900);
 
 
 }
