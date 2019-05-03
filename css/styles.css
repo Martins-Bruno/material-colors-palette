@@ -101,4 +101,5 @@ body {
   font-size: 1.7rem;
   z-index: 2;
   user-select: none;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
 }
